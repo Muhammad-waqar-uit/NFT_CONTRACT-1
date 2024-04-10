@@ -19,7 +19,7 @@ contract NFTScript is Script {
         nft_contract.initialize("Xolton Tokens", "XTK");
 
         //mint token 
-        nft_contract.createToken("new token");
+        nft_contract.createToken(account,"new token");
         vm.stopBroadcast();
     }
 }

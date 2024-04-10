@@ -28,10 +28,10 @@ contract NFT is ERC721URIStorageUpgradeable {
      * user create the NFT.
      * Function should be perform by user to create token.
      */
-    function createToken(string memory tokenURI) public returns (uint256) {
-        require(msg.sender != address(0),"Has Zero Address");
+    function createToken(address to,string memory tokenURI) public returns (uint256) {
+        require(to != address(0),"Has Zero Address");
         uint256 newTokenId = _tokenIds+=1; // The new token id is the current value of the counter
-        _mint(msg.sender, newTokenId); // mint the token to the sender
+        _mint(to, newTokenId); // mint the token to the sender
         _setTokenURI(newTokenId, tokenURI); // set the tokenURI to the tokenId.
         return newTokenId;
     }

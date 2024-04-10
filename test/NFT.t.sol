@@ -32,7 +32,7 @@ contract NFT_Test is Test {
     //creating an NFT testing nft contract function
     function test_createNFT() public{
         vm.prank(creator);
-        nft_contract.createToken("Some URI");
+        nft_contract.createToken(creator,"Some URI");
         assertEq(nft_contract.ownerOf(1),creator);
         vm.stopPrank();
     }

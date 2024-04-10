@@ -99,4 +99,4 @@ $ forge script script/NFT.s.sol:NFTScript --rpc-url $SEPOLIAAPIKEY
 
 # NFT_CONTRACT-1
 
-address : https://sepolia.etherscan.io/address/0xa3375d20f704bc9bb0e742e2e3472c82e185a1ba
+address : https://sepolia.etherscan.io/address/0x51b31be9c0ae43759992ac75b0c48f72655b0f57
