@@ -19,7 +19,7 @@ contract NFT is ERC721URIStorageUpgradeable, OwnableUpgradeable {
     event NFTUnlisted(address indexed seller, uint256 indexed tokenId,string tokenUri);
 
     function initialize(address token) public initializer {
-        __ERC721_init("Aidance", "Adn");
+        __ERC721_init("CryptoCrafters", "CC");
         __Ownable_init(msg.sender);
         tokenAddress = token;
     }
